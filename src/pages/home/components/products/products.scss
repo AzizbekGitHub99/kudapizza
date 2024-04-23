@@ -1,0 +1,58 @@
+.products {
+
+    &__adress {
+        border-radius: 8px;
+        background: rgb(255, 255, 255);
+        padding: 10px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        label {
+            border: 1px solid rgb(240, 240, 240);
+            width: 70%;
+            padding: 10px;
+            border-radius: 4px;
+            display: flex;
+            gap: 8px;
+
+            input {
+                width: 100%;
+                border: none;
+                outline: none;
+            }
+        }
+
+        button {
+            border: 1px solid transparent;
+            padding: 10px 16px;
+            border-radius: 4px;
+            background: rgb(255, 112, 16);
+            color: rgb(255, 255, 255);
+            line-height: 22px;
+            cursor: pointer;
+            transition: 0.5s;
+
+            &:hover {
+                border: 1px solid rgb(255, 112, 16);
+                color: rgb(255, 112, 16);
+                background-color: transparent;
+            }
+        }
+    }
+
+    &__title {
+        margin-top: 48px;
+        margin-bottom: 30px;
+        color: rgb(25, 25, 25);
+        font-family: Inter;
+        font-weight: 600;
+        line-height: 48px;
+    }
+
+    &__products-rows {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+}

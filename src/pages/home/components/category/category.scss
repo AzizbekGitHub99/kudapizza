@@ -1,0 +1,10 @@
+.category{
+    padding: 30px 0;
+    margin-top: 118px;
+    &__rows{
+
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        gap: 40px;
+    }
+}

@@ -1,0 +1,105 @@
+.header {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    z-index: 20;
+
+    &__info {
+        padding: 10px 0;
+        border-bottom: 1px solid rgb(240, 240, 240);
+
+        &__inner-left {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+
+            p {
+                color: rgb(25, 25, 25);
+                font-family: Inter;
+                font-size: 14px;
+                line-height: 18px;
+            }
+
+            span {
+                color: rgb(25, 25, 25);
+                font-family: Inter;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 18px;
+            }
+        }
+
+        &__inner-right {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+
+            button {
+                display: flex;
+                align-items: center;
+                border: none;
+                background-color: transparent;
+                gap: 10px;
+                cursor: pointer;
+            }
+        }
+
+        &__container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    &__location {
+        display: flex;
+        align-items: center;
+
+        img {
+            margin-right: 12px;
+        }
+
+        select {
+            cursor: pointer;
+            border: none;
+            color: rgb(25, 25, 25);
+            font-family: Inter;
+            font-size: 14px;
+            line-height: 18px;
+            outline: none;
+        }
+    }
+
+    &__bottom {
+        padding: 16px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        button {
+            border: none;
+            padding: 10px 16px;
+            display: flex;
+            align-items: center;
+            border-radius: 4px;
+            background: rgb(255, 112, 16);
+            color: rgb(255, 255, 255);
+            line-height: 22px;
+            gap: 8px;
+            cursor: pointer;
+        }
+    }
+}
+
+@media (max-width: 1092px){
+    .header{
+        &__info{
+            &__inner-left, &__inner-right{
+                gap: 20px;
+            }
+        }
+    }
+}

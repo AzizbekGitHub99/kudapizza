@@ -1,0 +1,105 @@
+.productCard {
+  border-radius: 12px;
+  background: rgb(255, 255, 255);
+  max-width: 300px;
+  position: relative;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  &__img-box {
+    overflow: hidden;
+  }
+  &__span {
+    background: rgb(226, 53, 53);
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 14px;
+    line-height: 18px;
+    width: 65px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    position: absolute;
+    top: 20px;
+    z-index: 5;
+  }
+  img {
+    width: 100%;
+  }
+
+  &__infos {
+    padding: 20px;
+
+    div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    color: rgb(25, 25, 25);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+
+  &__text {
+    line-height: 22px;
+    margin-bottom: 16px;
+  }
+
+  &__btn {
+    border-radius: 6px;
+    background: rgb(255, 112, 16);
+    border: 1px solid transparent;
+    color: rgb(255, 255, 255);
+    line-height: 22px;
+    cursor: pointer;
+    transition: 0.4s;
+    padding: 13px 32px;
+
+    &:hover {
+      background-color: transparent;
+      border: 1px solid rgb(255, 112, 16);
+      color: rgb(255, 112, 16);
+    }
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    button {
+      border-radius: 6px;
+      background: rgb(255, 112, 16);
+      border: 1px solid transparent;
+      color: rgb(255, 255, 255);
+      line-height: 22px;
+      cursor: pointer;
+      transition: 0.4s;
+      padding: 13px 24px;
+
+      &:hover {
+        background-color: transparent;
+        border: 1px solid rgb(255, 112, 16);
+        color: rgb(255, 112, 16);
+      }
+    }
+    span {
+      padding: 10px;
+    }
+  }
+
+  &__price {
+    color: rgb(255, 112, 16);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+  &:hover {
+    box-shadow: 0 0 15px 0 rgb(143, 142, 142);
+  }
+}
