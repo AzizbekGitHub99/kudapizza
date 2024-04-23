@@ -103,3 +103,16 @@
         }
     }
 }
+
+
+@media (max-width: 756px){
+    .header{
+        &__info{
+            &__inner-left{
+                p{
+                    display: none;
+                }
+            }
+        }
+    }
+}
