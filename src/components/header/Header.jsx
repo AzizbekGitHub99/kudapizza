@@ -82,7 +82,7 @@ const Header = () => {
                 {category.map((category, i) => {
                   return (
                     <li key={i}>
-                      <a href={`#${category.name}`}>{category.name}</a>
+                      <a href={`/#${category.name}`}>{category.name}</a>
                     </li>
                   );
                 })}

@@ -17,7 +17,7 @@
         background: rgb(255, 112, 16);
         color: rgb(255, 255, 255);
         line-height: 22px;
-        width: 115px;
+        min-width: 115px;
         gap: 8px;
         cursor: pointer;
     }
@@ -116,6 +116,10 @@
             }
         }
     }
+    // &__btns{
+    //     padding: 10px 16px;
+
+    // }
 }
 
 @media (max-width: 1092px) {
