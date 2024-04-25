@@ -7,6 +7,32 @@
     left: 0;
     z-index: 20;
 
+    &__cart {
+        border: none;
+        padding: 10px 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 4px;
+        background: rgb(255, 112, 16);
+        color: rgb(255, 255, 255);
+        line-height: 22px;
+        width: 115px;
+        gap: 8px;
+        cursor: pointer;
+    }
+
+    &__menu{
+        border: none;
+        border-radius: 4px;
+        background: transparent;
+        color: rgb(255, 255, 255);
+        line-height: 22px;
+        gap: 8px;
+        cursor: pointer;
+        display: none;
+    }
+
     &__info {
         padding: 10px 0;
         border-bottom: 1px solid rgb(240, 240, 240);
@@ -79,27 +105,64 @@
         justify-content: space-between;
         align-items: center;
 
-        button {
-            border: none;
-            padding: 10px 16px;
+        ul {
             display: flex;
             align-items: center;
-            border-radius: 4px;
-            background: rgb(255, 112, 16);
-            color: rgb(255, 255, 255);
-            line-height: 22px;
-            gap: 8px;
-            cursor: pointer;
+            gap: 32px;
+
+            a {
+                color: rgb(25, 25, 25);
+                line-height: 22px;
+            }
         }
     }
 }
 
-@media (max-width: 1092px){
-    .header{
-        &__info{
-            &__inner-left, &__inner-right{
+@media (max-width: 1092px) {
+    .header {
+        &__info {
+
+            &__inner-left,
+            &__inner-right {
                 gap: 20px;
             }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .header {
+        
+        &__btns{
+            display: flex;
+            gap: 10px;
+        }
+
+        &__info {
+            display: none;
+        }
+
+        &__bottom{
+            position: relative;
+        }
+
+        &__nav{
+            flex-direction: column;
+            position: absolute;
+            background-color: white;
+            min-height: 100vh;
+            transform: translateX(120%);
+            top: 100%;
+            right: 0;
+            width: 60%;
+            transition: 0.5s;
+
+            &__hide{
+                transform: translateX(20%);
+            }
+        }
+        &__menu{
+            display: block;
         }
     }
 }

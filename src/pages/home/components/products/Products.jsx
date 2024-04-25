@@ -24,7 +24,7 @@ const Products = () => {
         {categories.map((category, i) => {
           return (
             <Fragment key={i}>
-              <h1 className="products__title" key={i}>
+              <h1 id={category.name} className="products__title" key={i}>
                 {category.name}
               </h1>
               <div className="products__products-rows">

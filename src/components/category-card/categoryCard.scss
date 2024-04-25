@@ -8,10 +8,27 @@
   line-height: 24px;
   padding: 20px 40px;
   cursor: pointer;
+  transition: all .3s linear;
   img {
     height: 50px;
+    width: 50px;
+  }
+  .imag {
+    display: inline-block;
+  }
+  .imagH {
+    display: none;
   }
   &:hover {
-    background-color: white;
+    background-color: rgb(255, 112, 16);
+    color: white;
+    border: rgb(255, 112, 16);
+    box-shadow: 0 0 15px 0 rgb(255, 112, 16);
+    .imag {
+      display: none;
+    }
+    .imagH {
+      display: inline-block;
+    }
   }
 }
