@@ -1,13 +1,22 @@
-.category{
-    padding: 30px 0;
-    margin-top: 118px;
-    overflow-x: scroll;
-    &__rows{
-        display: grid;
-        grid-template-columns: repeat(8, 1fr);
-        gap: 40px;
-    }
+.category {
+  padding: 30px 0;
+  margin-top: 118px;
+  overflow-x: scroll;
+  &__rows {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 40px;
+  }
 }
 ::-webkit-scrollbar {
-    width: 0;
+  width: 0;
+}
+
+@media (max-width: 630px) {
+  .category {
+    padding: 20px 0;
+    &__rows {
+      gap: 12px;
+    }
+  }
 }
